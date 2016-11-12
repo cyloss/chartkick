@@ -363,9 +363,6 @@
           }
           var options = jsOptions(chart.data, chart.options, chartOptions), data, i, j;
           options.xAxis.type = chart.options.discrete ? "category" : "datetime";
-          if (!options.chart.type) {
-            options.chart.type = chartType;
-          }
           options.chart.renderTo = chart.element.id;
 
           var series = chart.data;
